@@ -9,7 +9,7 @@ def two_sum(nums, target)
   nums.each_with_index do |pri, ind1|
     nums.each_with_index do |seg, ind2|
       if (((pri + seg) == target) && (ind1 != ind2))
-        return (arr = [ind1, ind2])
+        return [ind1, ind2]
       end
     end
   end
