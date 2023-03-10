@@ -23,7 +23,7 @@ var letterCombinations = function(digits) {
 
   // dfs recursive helper
   const dfs = (i, digits, slate) => {
-    if (i === digits.length) {
+    if (i >= digits.length) {
       result.push(slate.join(''));
       return;
     }
